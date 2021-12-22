@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+	<head>Hello-Cargo</head>
+	<body>
+		<script type="text/javascript" src="./pj-wasm-test.js"></script>
+		<script type="text/javascript">
+			Module.addOnInit(function () {
+				console.log('Module ready!');
+                var test_init = Module.cwrap('test_init');
+		        test_init();
+			});
+		</script>
+	</body>
+</html>
